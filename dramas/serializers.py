@@ -6,7 +6,7 @@ class DramaSerializer(serializers.HyperlinkedModelSerializer):
         read_only=True, many=True, view_name='review_detail')
 
     drama_url = serializers.ModelSerializer.serializer_url_field(
-        view_name='restaurant_detail')
+        view_name='drama_detail')
     
     user = serializers.ReadOnlyField(source='user.username')
 
