@@ -18,7 +18,6 @@ class Review(models.Model):
         'users.User', related_name='reviews', on_delete=models.CASCADE)
     drama = models.ForeignKey(
         Drama, on_delete=models.CASCADE, related_name='reviews')
-    posted = models.DateField(auto_now_add=True)
     body = models.TextField()
     mood = models.BooleanField()
 
