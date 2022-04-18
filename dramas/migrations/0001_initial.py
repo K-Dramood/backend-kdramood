@@ -30,7 +30,7 @@ class Migration(migrations.Migration):
             name='Review',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('posted', models.DateField(auto_now_add=True)),
+                # ('posted', models.DateField(auto_now_add=True)),
                 ('body', models.TextField()),
                 ('mood', models.BooleanField()),
                 ('drama', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, related_name='reviews', to='dramas.drama')),
